@@ -236,8 +236,9 @@ public class TitleBar extends Toolbar {
     }
 
     private void enableOverflowForReactButtonViews(View child) {
-        if (child instanceof ActionMenuView) {
-            ((ViewGroup) child).setClipChildren(false);
-        }
+        // to solve https://github.com/wix/react-native-navigation/issues/4870 I commented out this code
+//        if (child instanceof ActionMenuView) {
+//            ((ViewGroup) child).setClipChildren(false);
+//        }
     }
 }
